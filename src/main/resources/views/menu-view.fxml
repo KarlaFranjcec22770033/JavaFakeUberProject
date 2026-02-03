@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuContorller">
+
+    <MenuBar AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Opcije">
+                <items>
+                    <MenuItem fx:id="vozilaItem" onAction="#showVozila" text="Vozila" />
+                    <MenuItem fx:id="infoVozacItem" onAction="#showVozacInfo" text="Informacije vozaca" />
+                    <MenuItem fx:id="rezervacijeItem" onAction="#showRezervacije" text="Rezervacije" />
+                    <MenuItem fx:id="infoKorisnikItem" onAction="#showKorisnikInfo" text="Informacije korisnika" />
+                </items></Menu>
+            <Menu mnemonicParsing="false" text="Povratak">
+                <items>
+                <MenuItem mnemonicParsing="false" onAction="#showMain" text="Nazad u glavni izbornik" />
+            </items>
+            </Menu>
+         <Menu mnemonicParsing="false" text="BackUp opcije">
+           <items>
+             <MenuItem fx:id="upload" mnemonicParsing="false" text="Upload" />
+               <MenuItem fx:id="reload" mnemonicParsing="false" text="Reload" />
+           </items>
+         </Menu>
+            <Menu fx:id="tables" text="Backup baze">
+                <MenuItem onAction="#backupTablice" text="BOOKINGS"/>
+                <MenuItem  onAction="#backupTablice" text="ROLES"/>
+                <MenuItem  onAction="#backupTablice" text="USERS"/>
+                <MenuItem  onAction="#backupTablice" text="VEHICLES"/>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+</AnchorPane>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "driverId": 4,
+    "model": "Mercedes",
+    "color": "Crna",
+    "registration": "ZG-1234-AA"
+  },
+  {
+    "id": 2,
+    "driverId": 4,
+    "model": "BMW",
+    "color": "Plava",
+    "registration": "ZG-5678-BB"
+  },
+  {
+    "id": 3,
+    "driverId": 5,
+    "model": "Renault",
+    "color": "Siva",
+    "registration": "OS-4321-CC"
+  },
+  {
+    "id": 4,
+    "driverId": 7,
+    "model": "Audi",
+    "color": "Bijela",
+    "registration": "KA-9999-DD"
+  }
+]
